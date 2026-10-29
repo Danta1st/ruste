@@ -1,0 +1,8 @@
+{
+  "name": "experimental",
+  "version": "0.2.1",
+  "description": "Experimental inbox for candidate skills awaiting real-world testing and review.",
+  "author": {
+    "name": "Ruste"
+  }
+}
