@@ -1,0 +1,4 @@
+interface:
+  display_name: "Maintain OKF Wiki"
+  short_description: "Analyze, onboard, and maintain repository OKF knowledge"
+  default_prompt: "Use $maintain-okf-wiki to analyze this repository for knowledge onboarding without modifying files."

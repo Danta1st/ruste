@@ -1,0 +1,13 @@
+{
+  "name": "core",
+  "version": "1.0.1",
+  "description": "Ruste developer workflow skills and Context7 MCP integration.",
+  "author": {
+    "name": "Ruste"
+  },
+  "keywords": [
+    "workflow",
+    "context7",
+    "skills"
+  ]
+}
