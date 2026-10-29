@@ -1,0 +1,21 @@
+{
+  "name": "ruste",
+  "owner": {
+    "name": "Ruste"
+  },
+  "metadata": {
+    "description": "Ruste: curated AI agent skills and developer workflows for GitHub Copilot CLI, OpenAI Codex CLI, and Claude Code CLI."
+  },
+  "plugins": [
+    {
+      "name": "core",
+      "description": "Developer workflow skills and Context7 documentation lookup",
+      "source": "./plugins/core"
+    },
+    {
+      "name": "experimental",
+      "description": "Experimental inbox for candidate skills under evaluation",
+      "source": "./plugins/experimental"
+    }
+  ]
+}

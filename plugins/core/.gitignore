@@ -1,0 +1,12 @@
+# User-specific Claude settings (may contain personal paths or tokens)
+.claude/*.local.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
