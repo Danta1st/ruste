@@ -23,6 +23,7 @@ claude plugin install experimental@ruste
 |---|---|---|
 | [`fact-check`](./skills/fact-check/SKILL.md) | Assess externally verifiable claims against available evidence. | [OpenAI policy](./skills/fact-check/agents/openai.yaml) |
 | [`maintain-okf-wiki`](./skills/maintain-okf-wiki/SKILL.md) | Retrieve, onboard, and maintain repository-local OKF knowledge. | [OpenAI interface](./skills/maintain-okf-wiki/agents/openai.yaml) |
+| [`my-local-backlog`](./skills/my-local-backlog/SKILL.md) | Capture, find, resume, and close personal backlog items in a Git checkout. | Uses the shared skill instructions. |
 
 See the [plugin manifest](./.claude-plugin/plugin.json) for plugin metadata.
 
@@ -40,6 +41,18 @@ $maintain-okf-wiki onboard analyze
 `fact-check` does not guarantee that a claim is true or complete. Its conclusions depend on available evidence and live research access. `maintain-okf-wiki` requires approval before changing repository knowledge.
 
 `maintain-okf-wiki` prefers indexes for retrieval and creates indexed bundles when initialization is approved. Existing OKF bundles may omit root or area indexes: the skill uses concept frontmatter and targeted body inspection to build navigation in memory, preserving the bundle. Discovery stays within task-relevant documentation areas; ambiguous bundle roots are surfaced before deriving concept IDs or resolving bundle-root links.
+
+### Personal local backlog
+
+From a Git checkout, capture an item in Copilot and open the same checkout in Codex or Claude Code to continue.
+
+```text
+/my-local-backlog Capture a story to document the offline setup steps.
+$my-local-backlog Find the offline setup story and summarize what would make it ready.
+/experimental:my-local-backlog Check whether the offline setup story meets its acceptance criteria.
+```
+
+The skill reads and writes Markdown in `inbox/backlog/` and requires Git. First capture may need write access to Git's local exclude file. A lookup can run with read access. Existing backlogs keep their item IDs, local protocol, index notes, and linked plans. The files stay on disk in that checkout, so another client needs access to the same working tree.
 
 ## Requirements and compatibility
 
