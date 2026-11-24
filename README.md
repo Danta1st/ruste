@@ -60,7 +60,7 @@ The marketplace identifier is `ruste`. Replace `core` with another plugin from t
 | Plugin | Purpose | Status |
 |---|---|---|
 | [`core`](./plugins/core/README.md) | Developer workflow skills and Context7 documentation lookup | Maintained workflow bundle |
-| [`experimental`](./plugins/experimental/README.md) | Fact checking and repository knowledge maintenance | Candidate skills under evaluation |
+| [`experimental`](./plugins/experimental/README.md) | Fact checking, repository knowledge maintenance, and personal local backlogs | Candidate skills under evaluation |
 
 ## Using skills
 
